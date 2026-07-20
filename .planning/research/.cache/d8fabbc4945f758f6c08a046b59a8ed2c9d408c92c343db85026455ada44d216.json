@@ -1,0 +1,1 @@
+{"content":"updateOrCreate(attributes, values) persists directly (no manual save() needed); ideal for idempotent per-answer autosave keyed on a composite unique constraint (attempt_id, question_id).","source":"web","provider":"webfetch","confidence":"MEDIUM","fetched_at":"2026-07-15T16:17:37.709Z","ttl":86400000,"kind":"docs"}

@@ -1,0 +1,1 @@
+{"content":"Laravel 11 test time-travel: $this->travel(N)->unit(), travelTo(Carbon), travelBack(), freezeTime()/freezeSecond() with closure forms; auto-resets after each test, preferred over manual Carbon::setTestNow().","source":"web","provider":"webfetch","confidence":"MEDIUM","fetched_at":"2026-07-15T16:17:36.812Z","ttl":86400000,"kind":"docs"}

@@ -1,0 +1,1 @@
+{"content":"Alpine.js countdown pattern: x-data with init()/setInterval decrementing a seeded remaining-seconds value, dispatching a custom event or directly firing an axios POST at zero to auto-submit; display-only, no authoritative timing on the client.","source":"web","provider":"websearch","confidence":"LOW","fetched_at":"2026-07-15T16:17:38.176Z","ttl":86400000,"kind":"web"}

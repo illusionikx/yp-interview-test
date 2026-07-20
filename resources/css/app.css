@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* x-cloak: hide Alpine-controlled elements until Alpine initializes, so
+   x-show/x-cloak markup (toggles, dropdowns, dirty-state Save buttons) doesn't
+   flash on page load. Used in 10+ views but had no effect without this rule. */
+[x-cloak] { display: none !important; }
+
+/* UI-03 token port (v3.0 Decision #5): CSS custom properties dereferenced by tailwind.config.js's
+   theme.extend.colors. Flipped by the existing `.dark` class (Phase 7's pre-paint bootstrap) — every
+   property defined on :root is also defined on .dark so no token silently keeps its light value. */
+@layer base {
+    :root {
+        --color-brand: 37 99 235; /* blue-600 #2563eb */
+        --color-brand-strong: 29 78 216; /* blue-700 #1d4ed8 */
+        --color-brand-medium: 191 219 254; /* blue-200 #bfdbfe */
+        --color-brand-soft: 219 234 254; /* blue-100 #dbeafe */
+        --color-fg-brand: 37 99 235; /* blue-600 */
+        --color-heading: 17 24 39; /* gray-900 #111827 */
+        --color-body: 107 114 128; /* gray-500 #6b7280 */
+        --color-border-default: 229 231 235; /* gray-200 #e5e7eb */
+        --color-border-default-medium: 209 213 219; /* gray-300 #d1d5db */
+        --color-neutral-primary-soft: 255 255 255; /* white */
+        --color-neutral-secondary-medium: 249 250 251; /* gray-50 #f9fafb */
+    }
+
+    .dark {
+        --color-brand: 59 130 246; /* blue-500 #3b82f6 */
+        --color-brand-strong: 96 165 250; /* blue-400 #60a5fa */
+        --color-brand-medium: 30 64 175; /* blue-800 #1e40af */
+        --color-brand-soft: 30 58 138; /* blue-900 #1e3a8a */
+        --color-fg-brand: 96 165 250; /* blue-400 */
+        --color-heading: 243 244 246; /* gray-100 #f3f4f6 */
+        --color-body: 156 163 175; /* gray-400 #9ca3af */
+        --color-border-default: 55 65 81; /* gray-700 #374151 */
+        --color-border-default-medium: 75 85 99; /* gray-600 #4b5563 */
+        --color-neutral-primary-soft: 31 41 55; /* gray-800 #1f2937 */
+        --color-neutral-secondary-medium: 55 65 81; /* gray-700 #374151 */
+    }
+}

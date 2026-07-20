@@ -1,0 +1,1 @@
+{"content":"Laravel Form Request validation treats an empty submitted datetime-local field as an empty string, not null, unless explicitly normalized (e.g. prepareForValidation) or the rule allows nullable with empty-string coercion.","source":"web","provider":"websearch","confidence":"LOW","fetched_at":"2026-07-16T10:08:29.211Z","ttl":86400000,"kind":"web"}
